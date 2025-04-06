@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { GoogleGenAI } from "@google/genai";
-import dotenv from 'dotenv';
 
 
 export default function Page() {
