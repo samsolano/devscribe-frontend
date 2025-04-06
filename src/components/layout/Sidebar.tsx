@@ -9,6 +9,9 @@ const Sidebar = () => {
       <div className="flex flex-col h-full">
         <nav className="mt-4">
           <ul className="space-y-2">
+            <li>
+            <a href="/prompting"> link to prompt testing</a>
+            </li>
           </ul>
         </nav>
       </div>

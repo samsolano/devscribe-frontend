@@ -1,6 +1,6 @@
 import React from 'react';
 import { Moon, Search } from 'lucide-react';
-import SearchBar from '../ui/SearchBar';
+// import SearchBar from '../ui/SearchBar';
 
 const Navbar = () => {
   return (
@@ -14,6 +14,7 @@ const Navbar = () => {
         
         <div className="flex-1 max-w-xl mx-8">
           {/* <SearchBar /> */}
+          <Search />
           <input />
         </div>
         
@@ -27,7 +28,7 @@ const Navbar = () => {
           </span>
           
           <button className="w-9 h-9 rounded-full flex items-center justify-center hover:bg-devscribe-hover-bg transition-colors">
-            {/* <Moon size={18} className="text-devscribe-text-secondary" /> */}
+            <Moon size={18} className="text-devscribe-text-secondary" />
           </button>
         </div>
       </div>
