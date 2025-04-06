@@ -1,7 +1,6 @@
 import React from 'react';
 import { Moon, Search } from 'lucide-react';
 import SearchBar from '../ui/SearchBar';
-import GroupLogo from '@/lib/Group 19.png';
 
 const Navbar = () => {
   return (
@@ -9,7 +8,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between w-full">
         <div className="w-64 flex items-center pl-5">
           <div className="flex items-center">
-            {/* <img src={GroupLogo} alt="Logo" className="w-auto h-8" /> */}
+            <img src="/logo.png" alt="Logo" className="w-auto h-8" />
           </div>
         </div>
         
