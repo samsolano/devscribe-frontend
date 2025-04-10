@@ -3,8 +3,8 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
-import APISidebar from './APISidebar';
 import { usePathname } from 'next/navigation';
+import DashboardSidebar from './DashboardSidebar';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -20,7 +20,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     pathname.startsWith('/api-docs/');
   
   // Choose the appropriate sidebar
-  const SidebarComponent = isApiRelatedPage ? APISidebar : Sidebar;
+  // const SidebarComponent = isApiRelatedPage ? APISidebar : Sidebar;
+  const SidebarComponent = Sidebar
 
   return (
     <div>
