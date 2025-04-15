@@ -97,8 +97,9 @@ import React, { useState } from 'react';
       pathname.split('/api-docs/')[1] : '';
   
     return (
-      <aside className="w-64 h-[calc(100vh-4rem)] overflow-y-auto overflow-x-hidden pt-4 border-r border-codium-border fixed top-16 left-0 bg-codium-dark-gray 
-        scrollbar-thin scrollbar-track-devscribe-dark-gray scrollbar-thumb-devscribe-hover-bg/80 hover:scrollbar-thumb-devscribe-hover-bg/90"
+      <aside className="w-64 h-[calc(100vh-4rem)] overflow-y-auto overflow-x-hidden pt-4 border-r border-devscribe-border
+       fixed top-16 left-0 bg-codium-dark-gray scrollbar-thin scrollbar-track-devscribe-dark-gray 
+       scrollbar-thumb-devscribe-hover-bg/80 hover:scrollbar-thumb-devscribe-hover-bg/90"
       >
         <div className="flex flex-col h-full">
           <div className="px-6 py-2">
@@ -108,9 +109,8 @@ import React, { useState } from 'react';
                 className={`
                   sidebar-link text-white font-bold
                   flex items-center gap-4 
-                  px-4 py-2 rounded-md 
+                  px-4 py-2 
                   transition-all duration-200 
-                  hover:bg-codium-hover-bg 
                   hover:text-white 
                   ${pathname === '/api-marketplace' ? 'bg-codium-hover-bg' : ''}
                 `}
@@ -122,6 +122,7 @@ import React, { useState } from 'react';
                 href="/api-deepsearch" 
                 className={`
                   sidebar-link text-white font-bold
+                  text-[14px]
                   flex items-center gap-4 
                   px-4 py-2 rounded-md 
                   transition-all duration-200 
@@ -191,7 +192,7 @@ import React, { useState } from 'react';
           {/* Getting Started Section */}
           <div className="sidebar-section mt-4">
             <div className="sidebar-heading text-white mb-2 px-6 font-bold">
-              <span>Getting Started</span>
+              <span>GETTING STARTED</span>
             </div>
             
             <div className="mt-1 space-y-1">
@@ -270,7 +271,7 @@ import React, { useState } from 'react';
                       </div>
                     </CollapsibleTrigger>
                     <CollapsibleContent>
-                      <div className="ml-2 pl-4 border-l border-codium-border space-y-1 py-1">
+                      <div className="ml-2 pl-4 border-l border-devscribe-border space-y-1 py-1">
                         {category.apis.map((api) => (
                           <Link
                             key={api.id}
