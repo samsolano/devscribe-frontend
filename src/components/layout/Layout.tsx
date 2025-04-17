@@ -13,7 +13,7 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const pathname = usePathname();
   
-  // Determine which pages should show a sidebar and which one
+  // Determine which pages should show a sidebar and which ones dont
   const showSidebar = pathname !== '/download';
   const isApiRelatedPage = pathname === '/api-marketplace' || 
     pathname === '/api-deepsearch' || 
